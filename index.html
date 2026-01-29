@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Para ti ❤️</title>
+  <style>
+    body{font-family:system-ui;display:flex;min-height:100vh;align-items:center;justify-content:center;background:#fff;margin:0}
+    .card{max-width:520px;padding:28px;border:1px solid #eee;border-radius:18px;box-shadow:0 6px 30px rgba(0,0,0,.06);text-align:center}
+    button{padding:12px 18px;border:0;border-radius:12px;font-size:16px;cursor:pointer}
+    #msg{display:none;margin-top:18px;font-size:20px;line-height:1.4}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Hola ❤️</h1>
+    <p>Tengo algo para ti…</p>
+    <button id="btn">Pulsa para ver el mensaje</button>
+    <div id="msg"></div>
+  </div>
+
+  <script>
+    const mensaje = "Aquí va tu mensaje, amor. Eres mi persona favorita. 💘";
+    document.getElementById("btn").addEventListener("click", () => {
+      document.getElementById("msg").style.display = "block";
+      document.getElementById("msg").textContent = mensaje;
+      document.getElementById("btn").style.display = "none";
+    });
+  </script>
+</body>
+</html>
